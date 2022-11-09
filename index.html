@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Icono en pestaña de navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Cinemapp icon.png">
+
+    <!-- Conexión a archivo CSS global, e integraciones de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/assets/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Cinemapp</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+                <a href="index.html"><img src="./images/Cinemapp logo.png" alt="Logo Cinemapp" class="logo"></a>
+                <a href="#"><i class="bi bi-person-circle"></i></a>
+            </div>
+        </nav> <!-- FINALIZA NAVBAR -->
+    </header> <!-- FINALIZA HEADER -->
+
+    <main class="my-main">
+        <section class="trending">
+            <h1>En tendencia</h1>
+            <div class="trending-panels-container">
+                <div class="panel-trends active"><p>Testing</p></div>
+                <div class="panel-trends"><p>Testing</p></div>
+                <div class="panel-trends"><p>Testing</p></div>
+                <div class="panel-trends"><p>Testing</p></div>
+                <div class="panel-trends"><p>Testing</p></div>
+            </div>
+        </section> <!-- FINALIZA SECTION TENDENCIAS -->
+    </main> <!-- FINALIZA MAIN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

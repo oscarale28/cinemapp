@@ -1,0 +1,116 @@
+/* CSS GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blanco: #ffffff;
+    --azul-main: #141E30;
+    --azul-second: #243B55;
+    --azul-dark: #0F1924;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, var(--azul-main) 0%, var(--azul-second) 100%);
+    color: white;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+i {
+    font-size: 1.5625rem;
+    color: white;
+}
+
+.logo {
+    width: 9.375rem;
+}
+
+/* FINALIZA CSS GLOBAL */
+
+/* SECCIÓN TENDENCIAS */
+
+.trending-panels-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-trends {
+    background-image: url(../images/andor.jpg);
+    background-size: 100%;
+    background-position: top;
+    color: var(--blanco);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border-radius: 1.25rem;
+    height: 12.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.panel-trends p {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel-trends.active p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel-trends:last-child {
+    margin: 0rem;
+}
+
+.panel-trends:nth-of-type(4),
+.panel-trends:nth-of-type(5) {
+    display: none;
+}
+
+/* FINALIZA SECCIÓN TENDENCIAS */
+
+
+/* MQ para adaptar contenido a Desktop */
+@media (min-width: 992px) {
+
+    i {
+        font-size: 3.125rem;
+    }
+
+    .logo {
+        width: 18.75rem;
+    }
+
+    .trending-panels-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .panel-trends {
+        background-size: auto 110%;
+        height: 33.75rem;
+        flex: 0.5;
+        margin-right: 3.75rem;
+        transition: flex 0.7s ease-in;
+        -webkit-transition: all 700ms ease-in;
+    }
+
+    .panel-trends.active {
+        flex: 5;
+    }
+
+    .panel-trends:nth-of-type(4),
+    .panel-trends:nth-of-type(5) {
+        display: block;
+    }
+}
