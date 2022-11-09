@@ -24,12 +24,12 @@ body {
 }
 
 i {
-    font-size: 1.5625rem;
+    font-size: 1.875rem;
     color: white;
 }
 
 .logo {
-    width: 9.375rem;
+    width: 15.625rem;
 }
 
 /* FINALIZA CSS GLOBAL */
@@ -79,6 +79,30 @@ i {
 
 /* FINALIZA SECCIÓN TENDENCIAS */
 
+/* SECCIÓN CAROUSEL GÉNEROS */
+
+.owl-carousel .item {
+    background: linear-gradient(360deg, rgba(20,30,48,1) 25%, rgba(255,255,255,0) 100%), url(../images/dahmer.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 18.75rem !important;
+    margin-right: 6.25rem !important;
+    position: relative;
+    border-radius: 1.25rem;
+}
+
+.owl-carousel .item h4 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    margin: 0;
+}
+
+/* SECCIÓN CAROUSEL GÉNEROS */
 
 /* MQ para adaptar contenido a Desktop */
 @media (min-width: 992px) {
