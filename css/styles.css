@@ -19,7 +19,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(90deg, var(--azul-main) 0%, var(--azul-second) 100%);
     color: white;
-    max-width: 90%;
+}
+
+header, main {
+    max-width: 90% !important;
     margin: 0 auto;
 }
 
@@ -30,6 +33,10 @@ body {
 
 .logo {
     width: 15.625rem;
+}
+
+footer {
+    background-color: var(--azul-dark);
 }
 
 /* FINALIZA CSS GLOBAL */
@@ -104,7 +111,7 @@ body {
 
 /* FINALIZA SECCIÓN CAROUSEL GÉNEROS */
 
-/* SECCIÓN GRID SERIES Y PELÍCULAS */
+/* SECCIÓN SERIES Y PELÍCULAS */
 
 .search {
     width: 100%;
@@ -145,7 +152,6 @@ body {
     height: 37.5rem;
     overflow: hidden;
     position: relative;
-    transition: 200ms ease-in-out transform;
     object-fit: cover;
 }
 
@@ -183,8 +189,7 @@ body {
     font-weight: 700;
 }
 
-
-/* FINALIZA SECCIÓN GRID SERIES Y PELÍCULAS */
+/* FINALIZA SECCIÓN SERIES Y PELÍCULAS */
 
 /* MQ para adaptar contenido a Desktop */
 @media (min-width: 992px) {
