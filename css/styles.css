@@ -23,7 +23,7 @@ body {
     margin: 0 auto;
 }
 
-i {
+.navbar i {
     font-size: 1.875rem;
     color: white;
 }
@@ -82,7 +82,7 @@ i {
 /* SECCIÓN CAROUSEL GÉNEROS */
 
 .owl-carousel .item {
-    background: linear-gradient(360deg, rgba(20,30,48,1) 25%, rgba(255,255,255,0) 100%), url(../images/dahmer.jpg);
+    background: linear-gradient(360deg, rgba(20, 30, 48, 1) 25%, rgba(255, 255, 255, 0) 100%), url(../images/dahmer.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,12 +102,94 @@ i {
     margin: 0;
 }
 
-/* SECCIÓN CAROUSEL GÉNEROS */
+/* FINALIZA SECCIÓN CAROUSEL GÉNEROS */
+
+/* SECCIÓN GRID SERIES Y PELÍCULAS */
+
+.search {
+    width: 100%;
+    height: 3.75rem;
+    background: var(--blanco);
+    border-radius: 3.75rem;
+    padding: .9375rem;
+    color: var(--azul-main);
+}
+
+.search i {
+    font-size: 1.5625rem;
+}
+
+#search-form {
+    width: 90%;
+}
+
+#search-form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.125rem;
+}
+
+.movies-grid {
+    margin-top: 2.5rem;
+}
+
+.movie-card {
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 37.5rem;
+    overflow: hidden;
+    position: relative;
+    transition: 200ms ease-in-out transform;
+    object-fit: cover;
+}
+
+.movie-info {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    transform: translateY(125%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie-card:hover .movie-info {
+    transform: translateY(0);
+}
+
+.movie-info .genres {
+    color: rgba(36, 59, 85, 0.8);
+    font-weight: 500;
+}
+
+.movie-info .title {
+    color: var(--azul-main);
+    font-weight: 700;
+}
+
+.movie-info .movie-rating-badge {
+    background-color: var(--azul-main);
+}
+
+.movie-info .movie-rating {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+
+/* FINALIZA SECCIÓN GRID SERIES Y PELÍCULAS */
 
 /* MQ para adaptar contenido a Desktop */
 @media (min-width: 992px) {
 
-    i {
+    .navbar i {
         font-size: 3.125rem;
     }
 
@@ -130,11 +212,38 @@ i {
     }
 
     .panel-trends.active {
-        flex: 5;
+        flex: 3;
     }
 
     .panel-trends:nth-of-type(4),
     .panel-trends:nth-of-type(5) {
         display: block;
+    }
+
+    .grid-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search {
+        position: relative;
+        width: 3.75rem;
+        height: 3.75rem;
+        background: var(--blanco);
+        border-radius: 3.75rem;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    
+    .search i {
+        cursor: pointer;
+    }
+
+    .search.active {
+        width: 31.25rem;
+    }
+
+    .movies-grid {
+        margin-top: 1.5625rem;
     }
 }

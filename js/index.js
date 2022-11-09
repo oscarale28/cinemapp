@@ -16,32 +16,33 @@ const removeActiveClass = () => {
     });
 };
 
+// Funcionamiento de carrusel de géneros
 var owl = $('.owl-carousel');
 
 owl.owlCarousel({
-    loop:true,
-    margin:10,
-    responsive:{
-        0:{
-            items:1
+    loop: true,
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1
         },
-        768:{
-            items:2
+        768: {
+            items: 2
         },
-        1280:{
-            items:3
+        1280: {
+            items: 3
         },
-        1920 : {
+        1920: {
             items: 5
         }
     }
 });
 
-owl.on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        owl.trigger('next.owl');
-    } else {
-        owl.trigger('prev.owl');
-    }
-    e.preventDefault();
-});
+// Barra de búsqueda en menú de películas
+
+const searchIcon = document.querySelector('.bi-search');
+const search = document.querySelector('.search');
+
+searchIcon.onclick = function() {
+    search.classList.toggle('active');
+}
