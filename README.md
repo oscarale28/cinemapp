@@ -1,6 +1,6 @@
 # CinemApp 
 
-_Proyecto elaborado por Oscar Orellana como examen práctico de conocimientos de Echo Techonologies_
+_Proyecto elaborado por Oscar Orellana como examen práctico de conocimientos de Echo Techonologies_  
 _Ver Demo: https://oscarale28.github.io/cinemapp/_
 
 ## Tecnologías utilizadas 💻
