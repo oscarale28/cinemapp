@@ -12,3 +12,6 @@ _Proyecto elaborado por Oscar Orellana como examen práctico de conocimientos de
 * JQuery
 * Owl Carousel
 * Bootstrap Icons
+
+## Diseño 🎨
+_El diseño de las interfaces fue realizado con Figma: https://www.figma.com/file/ePBaKfsFWRbEN67U2l3Yvt/Movies-App---EchoTechs?node-id=0%3A1&t=0aBHhlqpDL2IM78W-1_
