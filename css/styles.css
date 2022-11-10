@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, var(--azul-main) 0%, var(--azul-second) 100%);
+    background: linear-gradient(45deg, var(--azul-main) 0%, var(--azul-second) 100%);
     color: white;
 }
 
@@ -216,6 +216,48 @@ footer {
     margin: 0;
 }
 
+/* --------------------------------------------------- PERFIL DE USUARIO --------------------------------------------------- */
+
+.user-info {
+    background-color: var(--azul-dark);
+    border-radius: 1.25rem;
+    margin-top: 12.5rem;
+}
+
+.user-pic-box {
+    width: 15.625rem;
+    height: 15.625rem;
+}
+
+.user-pic-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.phone,
+.mail {
+    font-weight: 700;
+}
+
+.phone span,
+.mail span {
+    font-weight: 500;
+}
+
+.logout-btn {
+    background: #DC3545;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #831b25;
+}
 
 /* MQ para adaptar contenido a Desktop */
 @media (min-width: 992px) {

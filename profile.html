@@ -40,51 +40,33 @@
     </header> <!-- FINALIZA HEADER -->
 
     <main class="my-main">
-        <div class="row movie-details gx-5 gy-5">
+        <h1 class="text-center">Perfil de usuario</h1>
 
-            <div class="col-xxl-3 col-xl-4">
-                <div class="movie-card" data-id="123456">
-                    <img src="./images/black adam.jpg" alt="">
-                </div>
+        <section class="user-info pb-5 text-center position-relative">
+
+            <div class="user-pic-box position-absolute start-50 top-0 translate-middle">
+                <img src="./images/mando.jpg" alt="" class="user-pic position-absolute top-0 start-0 rounded-circle">
             </div>
 
-            <div class="col-xxl-9 col-xl-8">
-                <article class="movie-info">
-                    <h1 class="movie-year mb-5">Star Wars: Andor <span class="movie-year fw-normal">(2022)</span></h1>
-                    <ul class="movie-genres mb-5">
-                        <li>Ciencia ficción y fantasía</li>
-                        <li>Acción y aventuras</li>
-                        <li>Guerra y política</li>
-                    </ul>
-                    <p class="movie-overview">Spanning the years 1945 to 1955, a chronicle of the fictional
-                        Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone
-                        barely survives an attempt on his life, his youngest son, Michael steps in to take care of the
-                        would-be killers, launching a campaign of bloody revenge.</p>
-                </article>
-            </div>
-        </div> <!-- FINALIZA INFO PELI -->
-        <div class="row movie-cast mt-5">
-            <div class="col">
-                <h2>Reparto</h1>
-                    <div class="owl-carousel owl-theme mt-3">
-                        <div class="item">
-                            <h4>Crimen</h4>
-                        </div>
-                        <div class="item">
-                            <h4>Crimen</h4>
-                        </div>
-                        <div class="item">
-                            <h4>Crimen</h4>
-                        </div>
-                        <div class="item">
-                            <h4>Crimen</h4>
-                        </div>
-                        <div class="item">
-                            <h4>Crimen</h4>
-                        </div>
+            <div class="user-details d-flex flex-column justify-content-center pt-lg-6 ">
+
+                <h1>Oscar Orellana <br> <span class="member">Miembro desde abril de 2020</span></h2>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <p class="mail fs-5">Correo electrónico: <br> <span>oscarore284@gmail.com</span></p>
                     </div>
+                    <div class="col-lg-6">
+                        <p class="phone fs-5">Teléfono: <br> <span>(+503) 7668 4927</span></p>
+                    </div>
+
+                </div> <!-- FINALIZAN MAIL Y TELÉFONO -->
             </div>
-        </div> <!-- FINALIZA REPARTO -->
+        </section> <!-- FINALIZA SECTION DE INFO USUARIO -->
+
+        <div class="logout d-flex justify-content-center align-content-center mt-5">
+            <button class="logout-btn py-3 px-5 border-0 text-white rounded-3 fw-bold fs-5">Cerrar sesión</button>
+        </div> <!-- FINALIZA BOTÓN LOGOUT -->
+
     </main> <!-- FINALIZA MAIN -->
 
     <footer>
