@@ -1,3 +1,4 @@
+// Funcionamiento de carrusel de reparto
 var owl = $('.owl-carousel');
 
 owl.owlCarousel({
