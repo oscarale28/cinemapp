@@ -13,6 +13,8 @@
     --azul-main: #141E30;
     --azul-second: #243B55;
     --azul-dark: #0F1924;
+    --azul-main-trans: rgba(20, 30, 48, 0.9);
+    --azul-second-trans: rgba(36, 59, 85, 0.9);
 }
 
 body {
@@ -51,7 +53,6 @@ footer {
 }
 
 .panel-trends {
-    background-image: url(../images/andor.jpg);
     background-size: 100%;
     background-position: top;
     color: var(--blanco);
@@ -61,6 +62,15 @@ footer {
     height: 12.5rem;
     margin-bottom: 2.5rem;
     position: relative;
+    overflow: hidden;
+}
+
+.panel-trends img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
 }
 
 .panel-trends p {
@@ -73,6 +83,7 @@ footer {
 }
 
 .panel-trends.active p {
+    z-index: 1;
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
@@ -147,6 +158,7 @@ footer {
     border-radius: 1.25rem;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease-in;
 }
 
 .movie-card img {
@@ -166,6 +178,10 @@ footer {
     max-height: 100%;
     transform: translateY(125%);
     transition: transform 0.3s ease-in;
+}
+
+.movie-card:hover {
+    box-shadow: 0px 0px 100px 0px rgba(255,255,255,0.1);
 }
 
 .movie-card:hover .movie-info {
@@ -196,7 +212,7 @@ footer {
 /* --------------------------------------------------- DETALLES DE PELÍCULA --------------------------------------------------- */
 
 .movie-cast .item {
-    background: url(../images/dahmer.jpg);
+    background: url(../images/rock.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -208,8 +224,6 @@ footer {
 }
 
 .movie-cast .item h4 {
-    font-size: 1.75rem;
-    font-weight: 700;
     position: absolute;
     bottom: 1.25rem;
     left: 1.25rem;
@@ -257,6 +271,59 @@ footer {
 
 .logout-btn:hover {
     background-color: #831b25;
+}
+
+/* --------------------------------------------------- FORMULARIOS AUTENTICACIÓN --------------------------------------------------- */
+
+.auth-background {
+    background:  linear-gradient(45deg, var(--azul-main-trans) 0%, var(--azul-second-trans) 100%), url(../images/auth-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.auth-logo-box {
+    width: 21.875rem;
+    top: -70px;
+}
+
+.auth-logo {
+    width: 100%;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(.3125rem);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.25rem;
+    color: var(--blanco);
+}
+
+.inputs input {
+    padding: 1.5625rem;
+    border-radius: 1.25rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    color: white;
+}
+
+.inputs input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.submit input {
+    width: 60%;
+    padding: .9375rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(45deg, var(--azul-main) 0%, var(--azul-second) 100%);
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
 }
 
 /* MQ para adaptar contenido a Desktop */
@@ -318,5 +385,10 @@ footer {
 
     .movies-grid {
         margin-top: 1.5625rem;
+    }
+
+    .auth-logo-box {
+        width: 37.5rem;
+        top: -6.25rem;
     }
 }
