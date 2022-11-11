@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+$(".owl-carousel ").load(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,

@@ -1,5 +1,5 @@
 // Evento cuando carga la página, así se logran detectar los panel-trends impresos con JS
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
     // Animación en hover de paneles de la seccion de tendencias
     const panels = document.querySelectorAll(".panel-trends");
     // Setear active de inicio el primer panel
