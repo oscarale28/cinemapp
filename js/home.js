@@ -78,7 +78,7 @@ async function printTopMovies() {
         return `
         <div class="col-xxl-3 col-xl-4 col-md-6">
         <div class="movie-card" data-id="${movie.id}">
-            <a href="details.html"><img src="${IMAGES + movie.poster_path}" alt="poster-pelicula"></a>
+            <a href="details.html?id=${movie.id}"><img src="${IMAGES + movie.poster_path}" alt="poster-pelicula"></a>
 
             <div class="movie-info p-4">
                 <h1 class="title m-0 p-2">${movie.title}</h1>
@@ -117,7 +117,7 @@ async function printSearchedMovies() {
         return `
         <div class="col-xxl-3 col-xl-4 col-md-6">
         <div class="movie-card" data-id="${movie.id}">
-            <a href="details.html"><img src="${IMAGES + movie.poster_path}" alt="poster-pelicula"></a>
+            <a href="details.html?id=${movie.id}"><img src="${IMAGES + movie.poster_path}" alt="poster-pelicula"></a>
 
             <div class="movie-info p-4">
                 <h1 class="title m-0 p-2">${movie.title}</h1>
