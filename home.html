@@ -42,50 +42,9 @@
     <main class="my-main">
         <section class="trending">
             <h1>En tendencia</h1>
-            <div class="trending-panels-container">
-                <div class="panel-trends active">
-                    <p class="fw-bold fs-2">Star Wars: Andor</p>
-                    <a href="details.html"><img src="./images/andor.jpg" alt="poster-pelicula"></a>
-                </div>
-                <div class="panel-trends">
-                    <p class="fw-bold fs-2">Star Wars: Andor</p>
-                    <a href="details.html"><img src="./images/andor.jpg" alt="poster-pelicula"></a>
-                </div>
-                <div class="panel-trends">
-                    <p class="fw-bold fs-2">Star Wars: Andor</p>
-                    <a href="details.html"><img src="./images/andor.jpg" alt="poster-pelicula"></a>
-                </div>
-                <div class="panel-trends">
-                    <p class="fw-bold fs-2">Star Wars: Andor</p>
-                    <a href="details.html"><img src="./images/andor.jpg" alt="poster-pelicula"></a>
-                </div>
-                <div class="panel-trends">
-                    <p class="fw-bold fs-2">Star Wars: Andor</p>
-                    <a href="details.html"><img src="./images/andor.jpg" alt="poster-pelicula"></a>
-                </div>
+            <div class="trending-panels-container" id="trending-container">
             </div>
         </section> <!-- FINALIZA SECTION TENDENCIAS -->
-
-        <section class="genres mt-6">
-            <h1>Explorar por géneros</h1>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <h4>Crimen</h4>
-                </div>
-                <div class="item">
-                    <h4>Crimen</h4>
-                </div>
-                <div class="item">
-                    <h4>Crimen</h4>
-                </div>
-                <div class="item">
-                    <h4>Crimen</h4>
-                </div>
-                <div class="item">
-                    <h4>Crimen</h4>
-                </div>
-            </div>
-        </section> <!-- FINALIZA SECCIÓN DE GÉNEROS -->
 
         <section class="movies mt-6">
 
@@ -96,82 +55,17 @@
                     <form action="" id="search-form" class="mx-3">
                         <input type="text" placeholder="Buscar..." id="search-input" autocomplete="off">
                     </form>
-                    <i class="bi bi-x" onclick="document.getElementById('search-input').value=''"></i>
+                    <!--Al presionar la X se limpia el input y a la vez se resetea el grid -->
+                    <i class="bi bi-x" onclick="document.getElementById('search-input').value=''; printTopMovies();"></i> 
                 </div>
             </div> <!-- FINALIZA HEADER DE SERIES Y PELÍCULAS -->
 
             <div class="movies-grid">
-                <div class="row gx-5 gy-5">
-
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="movie-card" data-id="123456">
-                            <a href="details.html"><img src="./images/black adam.jpg" alt="poster-pelicula"></a>
-
-                            <div class="movie-info p-4">
-                                <p class="genres mb-2">Acción, Superhéroes</p>
-                                <h1 class="title m-0">Black Adam</h1>
-                                <span
-                                    class="movie-rating-badge position-absolute top-0 end-0 translate-middle p-3 rounded-circle">
-                                    <span class="movie-rating">7.7</span>
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="movie-card" data-id="123456">
-                            <a href="details.html"><img src="./images/black adam.jpg" alt="poster-pelicula"></a>
-
-                            <div class="movie-info p-4">
-                                <p class="genres mb-2">Acción, Superhéroes</p>
-                                <h1 class="title m-0">Black Adam</h1>
-                                <span
-                                    class="movie-rating-badge position-absolute top-0 end-0 translate-middle p-3 rounded-circle">
-                                    <span class="movie-rating">7.7</span>
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="movie-card" data-id="123456">
-                            <a href="details.html"><img src="./images/black adam.jpg" alt="poster-pelicula"></a>
-
-                            <div class="movie-info p-4">
-                                <p class="genres mb-2">Acción, Superhéroes</p>
-                                <h1 class="title m-0">Black Adam</h1>
-                                <span
-                                    class="movie-rating-badge position-absolute top-0 end-0 translate-middle p-3 rounded-circle">
-                                    <span class="movie-rating">7.7</span>
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="movie-card" data-id="123456">
-                            <a href="details.html"><img src="./images/black adam.jpg" alt="poster-pelicula"></a>
-
-                            <div class="movie-info p-4">
-                                <p class="genres mb-2">Acción, Superhéroes</p>
-                                <h1 class="title m-0">Black Adam</h1>
-                                <span
-                                    class="movie-rating-badge position-absolute top-0 end-0 translate-middle p-3 rounded-circle">
-                                    <span class="movie-rating">7.7</span>
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
+                <div class="row gx-5 gy-5" id="top-movies-row">
                 </div> <!-- FINALIZA ROW DE SERIES Y PELÍCULAS -->
             </div> <!-- FINALIZA GRID DE SERIES Y PELÍCULAS -->
 
         </section> <!-- FINALIZA SECCIÓN DE SERIES Y PELÍCULAS -->
-
 
     </main> <!-- FINALIZA MAIN -->
 

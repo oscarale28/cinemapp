@@ -70,7 +70,7 @@ footer {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    position: relative;
+    position: center;
     object-fit: cover;
 }
 
@@ -81,6 +81,7 @@ footer {
     left: 1.25rem;
     margin: 0;
     opacity: 0;
+    text-shadow: 0px 0px 1px #000;
 }
 
 .panel-trends.active p {
@@ -98,32 +99,8 @@ footer {
     display: none;
 }
 
+
 /* FINALIZA SECCIÓN TENDENCIAS */
-
-/* SECCIÓN CAROUSEL GÉNEROS */
-
-.genres .item {
-    background: linear-gradient(360deg, rgba(20, 30, 48, 1) 25%, rgba(255, 255, 255, 0) 100%), url(../images/dahmer.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 18.75rem !important;
-    margin-right: 6.25rem !important;
-    position: relative;
-    border-radius: 1.25rem;
-}
-
-.genres .item h4 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
-    margin: 0;
-}
-
-/* FINALIZA SECCIÓN CAROUSEL GÉNEROS */
 
 /* SECCIÓN SERIES Y PELÍCULAS */
 
@@ -323,8 +300,8 @@ footer {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* MQ para adaptar contenido a Desktop */
