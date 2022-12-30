@@ -1,4 +1,4 @@
-$(".owl-carousel ").load(function () {
+/*$(".owl-carousel ").load(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
@@ -17,7 +17,7 @@ $(".owl-carousel ").load(function () {
             }
         }
     })
-});
+});*/
 
 // Se busca y guarda el ID de la película seleccionada a través de la URL
 let params = new URLSearchParams(location.search);
@@ -69,6 +69,7 @@ async function printMovieDetails() {
          `
 }
 
+/*
 // Se obtiene el reparto de la película
 async function getMovieCast() {
     const resp = await fetch(MOVIE_CAST);
@@ -90,5 +91,5 @@ async function printMovieCast() {
         </div>
         `
     }).join('')
-}
+}*/
 
